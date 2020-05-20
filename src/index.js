@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import store from './store'
 import App from './App';
+import './styles/index.scss';
 import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

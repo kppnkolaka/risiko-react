@@ -30,7 +30,7 @@ class Sider extends Component {
     return (
       <Sidebar
         as={Menu}
-        animation="push"
+        animation="overlay"
         direction="left"
         fixed="left"
         vertical
