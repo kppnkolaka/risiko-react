@@ -5,6 +5,7 @@ import store from './store'
 import App from './App';
 import './styles/index.scss';
 import * as serviceWorker from './serviceWorker';
+import 'react-semantic-toasts/styles/react-semantic-alert.css';
 import 'semantic-ui-css/semantic.min.css';
 import { BrowserRouter } from 'react-router-dom';
 

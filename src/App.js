@@ -8,7 +8,8 @@ import {
   Route,
   withRouter
 } from "react-router-dom";
-import Referensi from './views/referensi';
+import { SemanticToastContainer } from 'react-semantic-toasts';
+import Referensi from './views/referensi/referensi';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Sidebar.Pusher dimmed={false}>
           <Segment stacked>
             <main className="content-right">
+              <SemanticToastContainer />
               <Router>
                 <Switch>
                   <Route exact path="/referensi" render={ props => <Referensi {...props} /> } />
