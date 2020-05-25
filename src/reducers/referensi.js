@@ -22,11 +22,11 @@ export default (state = initialState, action = {}) => {
         dampak: action.data[1]
       }
 
-    case 'FETCH_REFERENSI_FAILED':
-      return {
-        ...state,
-        status: action.err
-      }
+    // case 'FETCH_REFERENSI_FAILED':
+    //   return {
+    //     ...state,
+    //     status: action.err
+    //   }
 
     case 'SUBMIT_REFERENSI_SUCCESS':
       return {

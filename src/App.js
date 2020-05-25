@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import { SemanticToastContainer } from 'react-semantic-toasts';
 import Referensi from './views/referensi/referensi';
+import Risiko from './views/risiko/risiko';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Router>
                 <Switch>
                   <Route exact path="/referensi" render={ props => <Referensi {...props} /> } />
+                  <Route exact path="/risiko" render={ props => <Risiko {...props} /> } />
                 </Switch>
               </Router>
             </main>

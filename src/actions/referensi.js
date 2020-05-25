@@ -9,7 +9,7 @@ export const FetchReferensi = () => dispatch => {
     return dispatch(FetchReferensiSuccess(response));
   }).catch( error => {
     return dispatch(FetchReferensiFailed('something went wrong'));
-  })
+  });
 }
 
 const doFetch =  kategori => {
