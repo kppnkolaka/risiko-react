@@ -16,7 +16,7 @@ class FormRisiko extends Component {
   }
 
   render() {
-    const { nomor, sasaran_organisasi_id, kejadian, awal, akhir } = this.props.labels;
+    const { nomor, sasaran_organisasi_id, kejadian, penyebab, dampak, awal, akhir } = this.props.labels;
 
     return (
       <Formik
@@ -71,6 +71,22 @@ class FormRisiko extends Component {
               />
             </Form.Field>
             <Form.Field>
+              <label> {penyebab} </label>
+              <TextArea 
+                placeholder="Penyebab risiko..." 
+                name="penyebab" 
+                value={values.penyebab}
+              />
+            </Form.Field>
+            <Form.Field>
+              <label> {dampak} </label>
+              <TextArea 
+                placeholder="Dampak risiko..." 
+                name="dampak" 
+                value={values.dampak}
+              />
+            </Form.Field>
+            <Form.Field>
               <label>Proyeksi Besaran Risiko</label>
               <Input 
                 placeholder="Awal tahun"
@@ -93,7 +109,7 @@ class FormRisiko extends Component {
             </Form.Field>
             <Button
               type="submit"
-              color="blue"
+              color="green"
               onClick={handleSubmit}
             >
               Submit        

@@ -14,6 +14,8 @@ class ModalRisiko extends Component {
         awal: '',
         akhir: '',
         kejadian: '',
+        penyebab: '',
+        dampak: '',
         sasaran_organisasi_id: ''
       },
       details: {}
