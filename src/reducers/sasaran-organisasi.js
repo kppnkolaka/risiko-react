@@ -1,5 +1,4 @@
 const initialState = {
-  raw: [],
   data: [],
   notif: {
     type: '',
@@ -9,11 +8,10 @@ const initialState = {
 
 export default (state = initialState, action = {}) => {
   switch(action.type) {
-    case 'FETCH_RISIKO_SUCCESS':
+    case 'FETCH_SASARAN_SUCCESS':
       return {
         ...state,
-        data: action.data.data,
-        raw: action.data.raw
+        data: action.data.data
       }
 
     default:

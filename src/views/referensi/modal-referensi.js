@@ -84,7 +84,6 @@ class ModalReferensi extends Component {
         open={open}
         onClose={() => {
           onClose(false);
-          // this.props.history.push('/referensi');
         }}
       >
         <Modal.Header>Referensi {kategori}</Modal.Header>
